@@ -1,0 +1,18 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsla(205, 82%, 91%, 1);
+}
+
+#about p {
+    width: 75vw;
+}
+
+@media only screen and (max-width: 576px) {
+    #about p {
+        width: 90vw;
+    }
+  }

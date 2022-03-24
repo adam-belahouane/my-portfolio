@@ -1,0 +1,93 @@
+#projects {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.listofprojects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  background-color: white;
+  border: 1px solid white;
+  width: 35vw;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 79%);
+  padding-bottom: 1vh;
+  transition: transform 500ms, box-shadow 1s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 79%);
+}
+
+.project > a > img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.link {
+  text-decoration: unset;
+  color: black;
+  margin-right: 1vw;
+  border-radius: 0.3rem;
+  border: 1px solid black;
+  padding: 1vh 1vw;
+}
+
+.link:hover {
+  text-decoration: unset;
+  color: white;
+  background-color: black;
+  margin-right: 1vw;
+  border-radius: 0.3rem;
+  border: 1px solid black;
+  padding: 1vh 1vw;
+}
+
+.projecttext {
+  padding: 1vh 1vw;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .project {
+    background-color: white;
+    border: 1px solid black;
+    width: 40vw;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px rgba(143, 143, 143, 0.473);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project {
+    background-color: white;
+    border: 1px solid black;
+    width: 70vw;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px rgba(143, 143, 143, 0.473);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .project {
+    background-color: white;
+    border: 1px solid black;
+    width: 90vw;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px rgba(143, 143, 143, 0.473);
+  }
+}

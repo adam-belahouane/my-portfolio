@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import { useState } from 'react';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Main from './components/Main';
 
 function App() {
+  const[pageLocation, setPageLocation] = useState("home")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar setPageLocation={setPageLocation} hrefLoc={pageLocation}/>
+      <div>
+        <Main setPageLocation={setPageLocation}/>
+        <About setPageLocation={setPageLocation}/>
+        <Projects setPageLocation={setPageLocation}/>
+        <Contact setPageLocation={setPageLocation}/>
+      </div>
+
     </div>
   );
 }

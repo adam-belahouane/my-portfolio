@@ -6,8 +6,6 @@ const About = ({setPageLocation}) => {
     <>
       <div id="about">
         <h3>About</h3>
-        
-        <p>Hi, my name is Adam!</p>
         <p>
           I am a Full stack(mern) Web Developer. Before making the switch to the
           web development world, I was working in the construction industry in a

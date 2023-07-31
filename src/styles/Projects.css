@@ -4,40 +4,47 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .listofprojects {
+  width: 80%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  columns: 50%;
+  flex-wrap: wrap;
+  flex: 1 0 50%;
 }
 
 .project {
-  background-color: white;
-  border: 1px solid white;
-  width: 35vw;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 79%);
+  width: 30vw;
+  border-radius: 0.25rem;
   padding-bottom: 1vh;
-  transition: transform 500ms, box-shadow 1s;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.project:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 79%);
+.links-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.project > a > img {
+.project > img {
   width: 100%;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .link {
+  width: 40%;
+  text-align: center;
   text-decoration: unset;
   color: black;
-  margin-right: 1vw;
   border-radius: 0.3rem;
   border: 1px solid black;
   padding: 1vh 1vw;
@@ -47,7 +54,6 @@
   text-decoration: unset;
   color: white;
   background-color: black;
-  margin-right: 1vw;
   border-radius: 0.3rem;
   border: 1px solid black;
   padding: 1vh 1vw;
@@ -55,6 +61,10 @@
 
 .projecttext {
   padding: 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .title {
@@ -64,30 +74,32 @@
 
 @media only screen and (max-width: 992px) {
   .project {
-    background-color: white;
-    border: 1px solid black;
     width: 40vw;
-    border-radius: 0.5rem;
-    box-shadow: 5px 5px 5px rgba(143, 143, 143, 0.473);
+    border-radius: 0.25rem;
+    padding-bottom: 1vh;
+  }
+
+  .listofprojects {
+    width: 90%;
+
+    flex: 1;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .project {
-    background-color: white;
-    border: 1px solid black;
-    width: 70vw;
-    border-radius: 0.5rem;
-    box-shadow: 5px 5px 5px rgba(143, 143, 143, 0.473);
+    width: 70vw;   
+  }
+
+  .listofprojects {
+    width: 90%;
+    justify-content: center;
+
   }
 }
 
 @media only screen and (max-width: 576px) {
   .project {
-    background-color: white;
-    border: 1px solid black;
-    width: 90vw;
-    border-radius: 0.5rem;
-    box-shadow: 5px 5px 5px rgba(143, 143, 143, 0.473);
+    width: 90vw; 
   }
 }
